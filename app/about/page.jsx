@@ -5,15 +5,15 @@ import { TbCloudComputing } from "react-icons/tb";
 const About = () => {
   return (
     <>
-      <div className="flex text-lg flex-col justify-center m-4 px-6 py-6 bg-black text-white rounded-lg">
-       <h1 className="text-3xl font-bold text-center ">About me</h1>
-      <div> <FaGripLines className=" size-14 w-full"/></div>
-        <p className="text-s px-5 py-5">
-          A passionate and skilled DevOps, SRE, and Cloud Engineer with a strong
-          background in infrastructure provisioning, automation, and monitoring.
+      <div className="flex text-lg flex-col px-8 justify-center text-white rounded-3xl">
+       <h1 className="text-3xl font-bold pt-7">About me</h1>
+       <div>=========</div>
+        <span className="text-base "> A passionate and skilled DevOps, SRE, and Cloud Engineer with a strong background in infrastructure provisioning, automation, and monitoring.
           I have completed and been certified by Google Cloud for Associate
-          Cloud Engineer and AWS for AWS Certified Cloud Practitioner. Have
-          experience working with tools such as Jenkins, Terraform, and Ansible
+          Cloud Engineer and AWS for AWS Certified Cloud Practitioner. 
+          <br/>  
+          <br/>   
+          Have experience working with tools such as Jenkins, Terraform, and Ansible
           to streamline development processes and ensure efficient code
           deployment. Proficient in managing and monitoring cloud infrastructure
           services on AWS and GCP, as well as maintaining high availability in
@@ -23,11 +23,14 @@ const About = () => {
           GitOps for managing infrastructure as code. My expertise also includes
           integrating automation testing into the CI/CD pipeline and developing
           scripts to automate tasks, improving efficiency and reducing manual
-          effort. With a Bachelor's degree in Computer Science and a strong GPA,
+          effort. 
+          <br/>  
+          <br/>  
+          With a Bachelor's degree in Computer Science and a strong GPA,
           I am committed to continuous learning and professional growth. I am
           seeking opportunities to leverage my skills and contribute to the
           success of DevOps, SRE and cloud engineering projects.
-        </p>
+        </span>
         
         <h1 className="text-3xl font-bold text-left px-2 py-3 ">What I'm Doing</h1>
         <div className="flex grid grid-cols-2 gap-5 "> 
