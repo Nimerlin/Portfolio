@@ -44,3 +44,40 @@
   height: 100%;
   background-color: #777777; /* Adjust color as needed */
 }
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.background-image {
+  background-image: url('/images/profile/devops-img.gif');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  flex: 1;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  flex: 0 0 20%; /* Adjust as needed */
+  padding: 20px;
+}
+
+.content-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
