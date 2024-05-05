@@ -2,32 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.profile {
+  margin-right: 1rem;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.info {
+  display: flex;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.personal {
+  margin-right: 2rem;
+}
+
+.personal p {
+  margin-bottom: 0.5rem;
+}
+
+.details h2 {
+  margin-bottom: 0.5rem;
+}
+
+.connector {
+  position: relative;
+}
+.connector::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background-color: #777777; /* Adjust color as needed */
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.background-image {
+  background-image: url('/images/profile/devops-img.gif');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  flex: 1;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  flex: 0 0 20%; /* Adjust as needed */
+  padding: 20px;
+}
+
+.content-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
 }

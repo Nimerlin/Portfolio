@@ -30,7 +30,7 @@ const About = () => {
         </p>
         
         <h1 className="text-3xl font-bold text-left px-2 py-3 ">What I'm Doing</h1>
-        <div className=" grid grid-cols-2 gap-5 "> 
+        <div className="flex grid grid-cols-2 gap-5 "> 
             <div className="flex-col justify-center items-center block  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
                 <SiAzuredevops className=" item-center fill-black size-10 " />
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">DevOps Engineer</h5>
@@ -38,8 +38,8 @@ const About = () => {
             </div>
             <div className="block  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
                 <TbCloudComputing className=" item-center fill-black size-10 "/>
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Cloud Engineer</h5>
-                <p className="font-normal text-gray-700 dark:text-gray-400">I enjoy design, secure and maintenance of an organization’s cloud-based infrastructure and application</p>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Cloud Engineer</h5>
+                <p class="font-normal text-gray-700 dark:text-gray-400">I enjoy design, secure and maintenance of an organization’s cloud-based infrastructure and application</p>
             </div>
             <div className="block  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
                   <FaCode className="item-center fill-black size-10 "/>
