@@ -44,21 +44,35 @@ const About = () => {
           </div>
         </div>
 
-        {/* Skills */}
-        <div className="article border-l pl-5 mt-4 relative">
-          <FaCircle className="absolute top-0 left-0 transform -translate-x-1/2 -translate-y-1/2 text-orange-500" />
-          <h5>Skills</h5>
+        {/* Card for Skills */}
+        <div className="card mt-4 border border-gray-300 rounded-lg p-4">
+          <h5 className="text-xl font-bold">Skills</h5>
           <div className="flex flex-col">
             <div className="flex items-center mb-2 relative">
               <span className="absolute left-0">Skill 1</span>
-              <div className="w-3/4 bg-gray-300 h-4 rounded-full relative">
-                <div className="bg-green-500 h-full rounded-full w-3/5"></div>
+              <div className="w-3/4 bg-gray-300 h-6 rounded-full relative">
+                <div className="bg-green-500 h-full rounded-full w-1/2 relative">
+                  <span className="absolute left-0 top-1/2 transform -translate-y-1/2 pl-2">Skill1</span>
+                  <span className="absolute right-0 top-0 bottom-0 mt-auto mb-auto mr-2">Beginner</span>
+                </div>
               </div>
             </div>
             <div className="flex items-center mb-2 relative">
               <span className="absolute left-0">Skill 2</span>
-              <div className="w-3/4 bg-gray-300 h-4 rounded-full relative">
-                <div className="bg-green-500 h-full rounded-full w-3/5"></div>
+              <div className="w-3/4 bg-gray-300 h-6 rounded-full relative">
+                <div className="bg-green-500 h-full rounded-full w-2/3 relative">
+                  <span className="absolute left-0 top-1/2 transform -translate-y-1/2 pl-2">Skill2</span>
+                  <span className="absolute right-0 top-0 bottom-0 mt-auto mb-auto mr-2">Intermediate</span>
+                </div>
+              </div>
+            </div>
+            <div className="flex items-center mb-2 relative">
+              <span className="absolute left-0">Skill 3</span>
+              <div className="w-3/4 bg-gray-300 h-6 rounded-full relative">
+                <div className="bg-green-500 h-full rounded-full w-full relative">
+                  <span className="absolute left-0 top-1/2 transform -translate-y-1/2 pl-2">Skill3</span>
+                  <span className="absolute right-0 top-0 bottom-0 mt-auto mb-auto mr-2">Advanced</span>
+                </div>
               </div>
             </div>
             {/* Add more skills as needed */}
