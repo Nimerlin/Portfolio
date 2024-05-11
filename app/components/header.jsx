@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { LuFacebook, LuInstagram } from "react-icons/lu";
+import { MdDownload } from "react-icons/md";
 import { FaXTwitter, FaLinkedin, FaGithub } from "react-icons/fa6";
 
 export default function Header() {
@@ -45,7 +46,7 @@ export default function Header() {
                     <ul className="content text-white list-none pl-6">
                         <li className="mb-2">
                             <span className="block text-xs text-slate-500">CV</span>
-                            <a href="#">download</a>
+                            <a href="/resume.pdf" className="flex items-center">download <MdDownload className="ml-1" /></a>
                         </li>
                         <li>
                             <span className="block text-xs text-slate-500">status</span>
