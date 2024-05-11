@@ -18,9 +18,9 @@ export default function RootLayout({ children }) {
           <div>
             <Header/>
           </div>
-          <div className="flex">
+          <div className="flex relative">
             <div><Sidenavbar /></div>
-            <div className="bg-[#23262b] ml-4 rounded-3xl">{children}</div>
+            <div className="bg-[#23262b] ml-4 py-9 rounded-3xl">{children}</div>
           </div>
         </main>
         {/* // <div>

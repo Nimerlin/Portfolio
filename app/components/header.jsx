@@ -5,7 +5,7 @@ import { FaXTwitter, FaLinkedin, FaGithub } from "react-icons/fa6";
 export default function Header() {
     return (
         <>
-            <header className="border-2 flex justify-around rounded-3xl p-7 h-auto bg-[#23262b] mb-6 text-white" >
+            <header className="border-2 flex justify-between rounded-3xl py-8 px-28 h-auto bg-[#23262b] mb-6 text-white" >
                 <div className="left flex justify-start basic-1/2 relative pr-5 border-r-2">
                     <div className="header-photo mr-7">
                         <Image
@@ -16,7 +16,7 @@ export default function Header() {
                             className="border-2 rounded-3xl h-40 w-40 bg-slate-900 -mt-16"
                         />
                     </div>
-                    <div className="basic-info ml-6" >
+                    <div className="basic-info mx-11" >
                         <h2 className="mb-1 font-bold text-2xl">
                             Nitin Sharma
                         </h2>

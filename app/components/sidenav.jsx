@@ -1,32 +1,39 @@
 import React from 'react'
 import Link from 'next/link';
 import Image from 'next/image';
-import { LuUserCircle2, LuFileText, LuBookOpen , LuCodesandbox }  from "react-icons/lu";
+import { LuUserCircle2, LuFileText, LuBookOpen, LuCodesandbox } from "react-icons/lu";
 import { MdOutlineContactPhone } from "react-icons/md";
+import styles from './styles.module.css'
 
 const Sidenavbar = () => {
-    return (
-  <nav className="flex flex-col rounded-3xl top-0 left-0 h-auto w-28 justify-between bg-[#23262b] text-white ">
-    <div className="flex flex-col justify-center px-6 py-6 items-center">
-      <Link href="/about" className="my-4 flex flex-col justify-center rounded-lg p-5 bg-gray-500 items-center hover:text-blue-500">
-          <LuUserCircle2 className=" size-14 "/>
-      </Link>
-      <Link href="/resume" className="my-4 flex flex-col justify-center rounded-lg p-5 bg-gray-500 items-center hover:text-blue-500">
-        <LuFileText className=" size-14 "/>
-      </Link>
-      <Link href="/blog" className="my-4 flex flex-col justify-center rounded-lg p-5 bg-gray-500 items-center hover:text-blue-500">
-      <LuBookOpen className=" size-14 "/>
-      </Link>
-      <Link href="/portfolio" className="my-4 flex flex-col justify-center rounded-lg p-5 bg-gray-500 items-center hover:text-blue-500">
-        <LuCodesandbox className=" size-14 "/>
-      </Link>
-      <Link href="/contact" className="my-4 flex flex-col justify-center rounded-lg p-5 bg-gray-500 items-center hover:text-blue-500">
-        <MdOutlineContactPhone className=" size-14 "/>
-      </Link>
-      </div>
-  </nav>
-);
-    }
+  return (
+    <nav className="flex flex-col sticky top-5 rounded-3xl py-2.5 px-5 h-auto w-auto justify-between bg-[#23262b] text-white ">
+
+        <Link href="/about" className={styles.button}>
+          <LuUserCircle2 className="size-11" />
+          <span className='py-0.5'>About</span>
+        </Link>
+
+        <Link href="/resume" className={styles.button}>
+          <LuFileText className="size-11 " />
+          <span className='py-0.5'>Resume</span>
+        </Link>
+        <Link href="/blog" className={styles.button}>
+          <LuBookOpen className="size-11" />
+          <span className='py-0.5'>Blog</span>
+        </Link>
+        <Link href="/portfolio" className={styles.button}>
+          <LuCodesandbox className=" size-11" />
+          <span className='py-0.5'>Portfolio</span>
+        </Link>
+        <Link href="/contact" className={styles.button}>
+          <MdOutlineContactPhone className=" size-11" />
+          <span className='py-0.5'>Contact</span>
+        </Link>
+
+    </nav>
+  );
+}
 
 
 export default Sidenavbar
