@@ -2,19 +2,21 @@ import React from 'react';
 
 const ZoomCard = ({ imageSrc, title, description }) => {
   return (
-    <div className="outer-div flex flex-col items-center relative">  
-      <div className="relative overflow-hidden rounded-lg object-cover cursor-pointer transform transition-transform duration-500 ease-in-out hover:scale-110 w-72">
+    <div className="outer-div flex flex-col items-center relative">
+    <div className="p-4 m-8 w-72 shadow-md bg-[#23262b] m-4 border-[#2e2f36] border-4 rounded-xl relative">
+      <picture className="rounded-lg overflow-hidden block">
         <img
+          className="hover:scale-125 ease-in duration-150"
           src={imageSrc}
-          alt="Card Image"
-          className="w-full h-48 object-cover"
         />
-        <div className="absolute top-0 right-0 bg-orange-500 text-white px-2 py-1 rounded-tr-lg rounded-bl-lg">Tag</div>
-      </div>
-      <div className="relative mt-4 text-center">
-        <h3 className="text-white text-xl font-semibold mb-2">{title}</h3>
-        <p className="text-gray-300 text-sm">{description}</p>
-      </div>
+      <div className="absolute top-0 right-0 bg-orange-500 text-white px-3 py-1/2 rounded-tr-lg rounded-bl-lg">Certificates</div>
+      </picture>
+      
+      <h1 className="mt-4 mb-2 text-white text-xl font-bold">{title}</h1>
+      <p className="text-sm text-gray-600">
+      {description}
+      </p>
+    </div>
     </div>
   );
 };

@@ -5,10 +5,10 @@ import Card from '../components/card';
 
 const Portfolio = () => {
   return (
-    <div className="flex flex-col justify-center m-4 px-6 py-6 bg-black text-white rounded-lg">
-      <h1 className="text-3xl font-bold text-center">Portfolio</h1>
+    <div className="flex text-lg flex-col px-8  justify-center text-white rounded-3xl">
+      <h1 className="text-3xl font-bold pt-7">Portfolio</h1>
+      <div className="my-2.5 h-1.5 w-16 rounded-md bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%"></div>
       <div className="flex justify-center mt-4 mb-8">
-        <FaGripLines className="text-4xl" />
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <ZoomCard
