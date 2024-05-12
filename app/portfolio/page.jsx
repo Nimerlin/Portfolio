@@ -10,6 +10,12 @@ const Portfolio = () => {
       <div className="my-2.5 h-1.5 w-16 rounded-md bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%"></div>
       <div className="flex justify-center mt-4 mb-8">
       </div>
+      <div className="flex justify-center mt-4 mb-8">
+        <a href="#" className="mx-4 text-white hover:text-gray-300 transition duration-300 transform hover:scale-105" >All</a>
+        <a href="#" className="mx-4 text-white hover:text-gray-300 transition duration-300 transform hover:scale-105" >Certifications</a>
+        <a href="#" className="mx-4 text-white hover:text-gray-300 transition duration-300 transform hover:scale-105" >Projects</a>
+        <a href="#" className="mx-4 text-white hover:text-gray-300 transition duration-300 transform hover:scale-105" >Badges</a>
+      </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <ZoomCard
           imageSrc="/images/profile/devops-img.gif"
