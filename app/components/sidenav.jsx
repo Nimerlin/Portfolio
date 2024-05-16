@@ -1,21 +1,30 @@
-
 'use client'
 
 import React from 'react'
 
 import Link from 'next/link';
 
-import Image from 'next/image';
-
-import { LuUserCircle2, LuFileText, LuBookOpen, LuCodesandbox } from "react-icons/lu";
-
-import { MdOutlineContactPhone } from "react-icons/md";
+import { LuUserCircle2, LuFileText, LuBookOpen, LuCodesandbox, LuContact } from "react-icons/lu";
 
 import styles from './styles.module.css'
 
 import { usePathname } from 'next/navigation';
 
 import clsx from 'clsx';
+
+const links = [
+
+ { name: 'About', href: '/about', icon: LuUserCircle2 },
+
+ { name: 'Resume', href: '/resume', icon: LuFileText },
+
+ { name: 'Blog', href: '/blog', icon: LuBookOpen },
+
+ { name: 'Portfolio', href: '/portfolio', icon: LuCodesandbox },
+
+ { name: 'Contact', href: '/contact', icon: LuContact },
+
+];
 
 const Sidenavbar = () => {
 
@@ -25,59 +34,29 @@ const Sidenavbar = () => {
 
   <nav className="flex flex-col sticky top-5 rounded-3xl py-2.5 px-5 h-auto w-auto justify-between bg-[#23262b] text-white ">
 
-    <Link href="/about" className={
+   {links.map((link) => {
 
-     clsx(
+    const LinkIcon = link.icon;
 
-     `${styles.button}`,
+    return (
 
-     {
+     <Link
 
-      'button-active': pathname === '/about',
+      key={link.name}
 
-      },
+      href={link.href}
 
-    )}
+      className={clsx(pathname === link.href ? styles.buttonActive : styles.button)}>
 
-    >
+      <LinkIcon className="size-11" />
 
-     <LuUserCircle2 className="size-11" />
+      <p>{link.name}</p>
 
-     <span className='py-0.5'>About</span>
+     </Link> 
 
-    </Link>
+    )
 
-    <Link href="/resume" className={styles.button}>
-
-     <LuFileText className="size-11 " />
-
-     <span className='py-0.5'>Resume</span>
-
-    </Link>
-
-    <Link href="/blog" className={styles.button}>
-
-     <LuBookOpen className="size-11" />
-
-     <span className='py-0.5'>Blog</span>
-
-    </Link>
-
-    <Link href="/portfolio" className={styles.button}>
-
-     <LuCodesandbox className=" size-11" />
-
-     <span className='py-0.5'>Portfolio</span>
-
-    </Link>
-
-    <Link href="/contact" className={styles.button}>
-
-     <MdOutlineContactPhone className=" size-11" />
-
-     <span className='py-0.5'>Contact</span>
-
-    </Link>
+   })}
 
   </nav>
 
