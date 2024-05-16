@@ -37,28 +37,6 @@ const About = () => {
         </span>
         
         <h1 className="text-3xl font-bold text-left px-2 py-3 ">What I'm Doing</h1>
-        {/* <div className="grid grid-cols-2 gap-5 "> 
-            <div className="flex-col justify-center items-center block  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-                <SiAzuredevops className=" item-center fill-black size-10 " />
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">DevOps Engineer</h5>
-                <p className="font-normal text-gray-700 dark:text-gray-400">I enjoy to improve the speed and quality of delivery, automate and achieve CICD</p>
-            </div>
-            <div className="block  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-                <TbCloudComputing className=" item-center fill-black size-10 "/>
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Cloud Engineer</h5>
-                <p className="font-normal text-gray-700 dark:text-gray-400">I enjoy design, secure and maintenance of an organization’s cloud-based infrastructure and application</p>
-            </div>
-            <div className="block  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-                  <FaCode className="item-center fill-black size-10 "/>
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Software Development</h5>
-                <p className="font-normal text-gray-700 dark:text-gray-400">I enjoy learning software development either for personal or specific purposes</p>
-            </div>
-            <div className="block  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-                <FaCreativeCommonsRemix className="item-center fill-black size-10 "/>
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">SRE</h5>
-                <p className="font-normal text-gray-700 dark:text-gray-400">I curious the processes and tools that ensure the scalability, reliability and availability of software systems</p>
-            </div>
-        </div> */}
         <Aboutcard/>
       
       </div>

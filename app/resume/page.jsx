@@ -5,7 +5,7 @@ import { TbCircleDashed } from "react-icons/tb";
 
 const About = () => {
   return (
-    <div className="flex flex-col items-center m-4 p-6 bg-black text-white rounded-lg">
+    <div className="flex flex-col px-8  text-white rounded-lg">
       <h1 className="text-3xl font-bold">Resume</h1>
       <div className="flex items-center mt-4">
         <GiHandBag className="mr-2 text-3xl" />
