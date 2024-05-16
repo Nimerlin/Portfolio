@@ -2,7 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg-image{
+  background-image: url('../public/cid.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 
+<<<<<<< HEAD
+=======
+}
+
+>>>>>>> 7f026380cacbbdb6d59d4372823397943fb8c29f
 .navbar {
   display: flex;
   align-items: center;
