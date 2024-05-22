@@ -17,23 +17,12 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${inter.className}  ${styles.image} bg-[#1d1e24]`}>
         <main className={`${styles.image} flex min-h-screen flex-col justify-between p-24 `}>
-          <div>
             <Header/>
-          </div>
           <div className="flex relative">
             <div><Sidenavbar /></div>
-            <div className="bg-[#23262b] ml-4 py-9 w-full rounded-3xl">{children}</div>
+            <div className="bg-[#23262b] ml-4 w-full py-9 rounded-3xl">{children}</div>
           </div>
         </main>
-        {/* // <div>
-        //   <Header />
-        // </div>
-        //   <div className="flex">
-        //   <Sidenavbar />
-        //   {children}
-        //   </div>
-        // <div>
-        //   </div> */}
       </body>
     </html>
   );
