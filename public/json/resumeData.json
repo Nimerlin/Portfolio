@@ -1,0 +1,58 @@
+{
+    "title": "Resume",
+    "sections": [
+      {
+        "icon": "GiHandBag",
+        "title": "Experience",
+        "items": [
+          {
+            "position": "Site Reliability Engineer (SRE)",
+            "company": "Lion Parcel",
+            "dates": "Jan 2021 - Present",
+            "description": "Provide technical support and assistance to developers, addressing their problems and needs, ensuring smooth development processes."
+          }
+        ]
+      },
+      {
+        "title": "Education",
+        "items": [
+          {
+            "institution": "Your University",
+            "dates": "Year - Year",
+            "description": "Education details here"
+          }
+        ]
+      },
+      {
+        "title": "Personal Projects",
+        "items": [
+          {
+            "project": "Project Name",
+            "dates": "Year - Year",
+            "description": "Project details here"
+          }
+        ]
+      },
+      {
+        "title": "Skills",
+        "items": [
+          {
+            "name": "Skill 1",
+            "level": "Beginner",
+            "percentage": "50%"
+          },
+          {
+            "name": "Skill 2",
+            "level": "Intermediate",
+            "percentage": "66%"
+          },
+          {
+            "name": "Skill 3",
+            "level": "Advanced",
+            "percentage": "100%"
+          }
+        ]
+      }
+    ]
+  }
+  
