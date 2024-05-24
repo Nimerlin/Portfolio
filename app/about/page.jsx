@@ -1,45 +1,63 @@
+"use client";
 
-import React from "react";
-import { FaGripLines, FaCode, FaCreativeCommonsRemix  } from "react-icons/fa";
-import { SiAzuredevops } from "react-icons/si";
-import { TbCloudComputing } from "react-icons/tb";
+import React, { useEffect, useState } from "react";
 import Aboutcard from "../components/about-card";
+
 const About = () => {
+  const [aboutData, setAboutData] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    fetch("/json/aboutData.json")
+      .then((response) => response.json())
+      .then((data) => {
+        setAboutData(data);
+        setIsLoading(false);
+      })
+      .catch((error) => console.error("Error fetching About data:", error));
+  }, []);
+
+  if (isLoading) {
+    return (
+      <div className="flex text-lg flex-col px-8 justify-center text-white rounded-3xl">
+        <div className="animate-pulse">
+          <h1 className="text-3xl font-bold pt-7">Loading...</h1>
+          <div className="my-2.5 h-1.5 w-16 rounded-md bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%"></div>
+          <span className="text-base mt-2.5 text-[#aeb0b8]">
+            {/* Placeholder text */}
+            <div className="h-4 bg-gray-400 rounded mb-2"></div>
+            <div className="h-4 bg-gray-400 rounded mb-2"></div>
+            <div className="h-4 bg-gray-400 rounded mb-2"></div>
+          </span>
+
+          <h1 className="text-3xl font-bold text-left px-2 py-3">Loading...</h1>
+          {/* Render skeleton for Aboutcard */}
+          <div className="h-48 bg-gray-400 rounded"></div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <>
-      <div className="flex text-lg flex-col px-8  justify-center text-white rounded-3xl ">
-       <h1 className="text-3xl font-bold pt-7 ">About me</h1>
-       <div className="my-2.5 h-1.5 w-16 rounded-md bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%"></div>
-        <span className="text-base  mt-2.5 text-[#aeb0b8]"> 
-          A passionate and skilled DevOps, SRE, and Cloud Engineer with a strong background in infrastructure provisioning, automation, and monitoring.
-          I have completed and been certified by Google Cloud for Associate
-          Cloud Engineer and AWS for AWS Certified Cloud Practitioner. 
-          <br/>  
-          <br/>   
-          Have experience working with tools such as Jenkins, Terraform, and Ansible
-          to streamline development processes and ensure efficient code
-          deployment. Proficient in managing and monitoring cloud infrastructure
-          services on AWS and GCP, as well as maintaining high availability in
-          Kubernetes-based container clusters. Successfully implemented
-          monitoring and logging tools like ELK, Grafana, an
-          d Datadog to ensure
-          comprehensive visibility into system performance and implemented
-          GitOps for managing infrastructure as code. My expertise also includes
-          integrating automation testing into the CI/CD pipeline and developing
-          scripts to automate tasks, improving efficiency and reducing manual
-          effort. 
-          <br/>  
-          <br/>  
-          With a Bachelor's degree in Computer Science and a strong GPA,
-          I am committed to continuous learning and professional growth. I am
-          seeking opportunities to leverage my skills and contribute to the
-          success of DevOps, SRE and cloud engineering projects.
-         
+      <div className="flex text-lg flex-col px-8 justify-center text-white rounded-3xl">
+        <h1 className="text-3xl font-bold pt-7">{aboutData.title}</h1>
+        <div className="my-2.5 h-1.5 w-16 rounded-md bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%"></div>
+        <span className="text-base mt-2.5 text-[#aeb0b8]">
+          {aboutData.subtitle}
+          <br />
+          <br />
+          {aboutData.details.map((detail, index) => (
+            <React.Fragment key={index}>
+              {detail}
+              <br />
+              <br />
+            </React.Fragment>
+          ))}
         </span>
-        
-        <h1 className="text-3xl font-bold text-left px-2 py-3 ">What I'm Doing</h1>
-        <Aboutcard/>
-      
+
+        <h1 className="text-3xl font-bold text-left px-2 py-3">{aboutData.currentTitle}</h1>
+        <Aboutcard />
       </div>
     </>
   );
