@@ -8,7 +8,7 @@ import clsx from 'clsx';
 
 
 const links = [
- { name: 'About', href: '/about', icon: LuUserCircle2 },
+ { name: 'About', href: '/', icon: LuUserCircle2 },
  { name: 'Resume', href: '/resume', icon: LuFileText },
  { name: 'Blog', href: '/blog', icon: LuBookOpen },
  { name: 'Portfolio', href: '/portfolio', icon: LuCodesandbox },
