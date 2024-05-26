@@ -4,13 +4,23 @@ import Blogcard from '../components/blogcard'
 
 const Blog = () => {
   return (
-    <div className="p-6">
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        <Blogcard imageSrc="/images/profile/devops-img.gif" />
-        <Blogcard imageSrc="/images/profile/devops-img.gif" />
-        <Blogcard imageSrc="/images/profile/devops-img.gif" />
+      <div className="grid grid-cols-1 sm:grid-cols-2  ">
+        <Blogcard 
+        imageSrc="/images/profile/devops-img.gif" 
+        title="Blog 1" 
+        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula."  />
+
+        <Blogcard 
+        imageSrc="/images/profile/devops-img.gif" 
+        title="Blog 2" 
+        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula."  />
+
+        <Blogcard 
+        imageSrc="/images/profile/devops-img.gif" 
+        title="Blog 3" 
+        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula."  />
+       
       </div>
-    </div>
   )
 }
 

@@ -2,7 +2,6 @@
 import React from 'react';
 import { FaGripLines } from "react-icons/fa";
 import ZoomCard from '../components/zoomcard';
-import Card from '../components/card';
 import { useState } from 'react';
 
 const Portfolio = () => {
@@ -42,37 +41,44 @@ const Portfolio = () => {
           <>
             <ZoomCard
               imageSrc="/images/profile/devops-img.gif"
-              title="Zoom Card 1"
+              title="Certificate 1 "
               description="Description goes here..."
+              type="certifications"
             />
             <ZoomCard
               imageSrc="/images/profile/devops-img.gif"
-              title="Zoom Card 2"
+              title="Certificate 2 "
               description="Description goes here..."
+              type="certifications"
             />
             <ZoomCard
               imageSrc="/images/profile/devops-img.gif"
-              title="Zoom Card 3"
+              title="Certificate 3"
               description="Description goes here..."
+              type="certifications"
             />
           </>
         )}
         {(activeTab === 'all' || activeTab === 'projects') && (
           <>
-            <Card
+            <ZoomCard
               imageSrc="/images/profile/devops-img.gif"
-              title="Card 1"
+              title="Project 1"
               description="Description goes here..."
+              type="projects"
+
             />
-            <Card
+            <ZoomCard
               imageSrc="/images/profile/devops-img.gif"
-              title="Card 2"
+              title="Project 2"
               description="Description goes here..."
+              type="projects"
             />
-            <Card
+            <ZoomCard
               imageSrc="/images/profile/devops-img.gif"
-              title="Card 3"
+              title="Project 3"
               description="Description goes here..."
+              type="projects"
             />
           </>
         )}

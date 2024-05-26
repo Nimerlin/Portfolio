@@ -19,20 +19,20 @@ export default function Header() {
 
     return (
         <>
-            <header className="lg:flex justify-between rounded-3xl py-8 px-28 h-auto bg-[#23262b] mb-6 text-white">
+            <header className="lg:flex lg:justify-between  rounded-3xl py-8 px-28 h-auto bg-[#23262b] mb-6 text-white">
                 <div className="left lg:flex justify-start basic-1/2 relative pr-5 border-r-2">
-                    <div className="header-photo mr-7">
+                    <div className="header-photo lg:mr-7 sm:my-auto">
                         {headerData ? (
                             <Image
                                 src={headerData.imageUrl}
-                                width={150}
+                               width={150}
                                 height={150}
                                 alt="Picture of the author"
                                 className="border-2 rounded-3xl h-40 w-40 bg-slate-900 -mt-16"
                             />
                         ) : (
                             <Skeleton circle={true} height={150} width={150} />
-                        )}
+                        )}  
                     </div>
                     <div className="basic-info mx-11">
                         <h2 className="mb-1 font-bold text-2xl">
