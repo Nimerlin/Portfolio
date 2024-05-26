@@ -6,7 +6,7 @@ export default function Blogcard({ imageSrc, title, desc }) {
     return (
 
         <>
-            <div className="relative flex w-80 flex-col bg-[#919396] m-4 border-[#2e2f36] border-4 rounded-3xl shadow-md">
+            <div className="relative flex w-80 flex-col  m-4 border-[#2e2f36] border-4 rounded-3xl shadow-md">
                 <div className="relative  -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
                 <Image 
                src={imageSrc} 

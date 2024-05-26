@@ -69,7 +69,7 @@ const About = () => {
               {section.items.map((item, itemIndex) => (
                 <div key={itemIndex} className="article border-l pl-5 mt-4 relative">
                   <FaCircle className="absolute top-0 left-0 transform -translate-x-1/2 -translate-y-1/2 text-[#545972]" />
-                  <h5>{item.position || item.institution || item.project}</h5>
+                  <h5>{ item.company } || {item.position}</h5>
                   <span>{item.dates}</span>
                   <p>{item.description}</p>
                 </div>

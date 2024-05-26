@@ -24,8 +24,8 @@ export default function Aboutcard() {
 
             <div className=" p-6 bg-[#23262b] m-4 border-[#2e2f36] border-4 rounded-3xl shadow flex flex-col items-center">
                 <TbReportSearch className="size-11" />
-                <h5 className="mb-2 text-2xl font-semibold tracking-tight text-white">SRE</h5>
-                <p className="mb-3 font-normal text-gray-500">I curious the processes and tools that ensure the scalability, reliability and availability of software systems</p>
+                <h5 className="mb-2 text-2xl font-semibold tracking-tight text-white">DBA</h5>
+                <p className="mb-3 font-normal text-gray-500">A SQL Server or Oracle DBA is responsible for the administration, maintenance, and optimization of Microsoft SQL Server databases.</p>
             </div>
 
             <div className=" p-6 bg-[#23262b] m-4 border-[#2e2f36] border-4 rounded-3xl shadow flex flex-col items-center">
