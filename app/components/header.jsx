@@ -19,22 +19,22 @@ export default function Header() {
 
     return (
         <>
-            <header className="lg:flex lg:justify-between  rounded-3xl py-8 px-28 h-auto bg-[#23262b] mb-6 text-white">
-                <div className="left lg:flex justify-start basic-1/2 relative pr-5 border-r-2">
-                    <div className="header-photo lg:mr-7 sm:my-auto">
+            <header className=" md:flex md:justify-between rounded-3xl py-2 lg:py-8 lg:px-28 h-auto bg-[#23262b] mb-6 text-white">
+                <div className="left flex flex-col items-center md:items-start md:flex-row md:justify-start basic-1/2 relative md:pr-5 lg:border-r-2">
+                    <div className="header-photo md:mr-7 ">
                         {headerData ? (
                             <Image
                                 src={headerData.imageUrl}
-                               width={150}
+                                width={150}
                                 height={150}
-                                alt="Picture of the author"
+                                alt="Hero Image"
                                 className="border-2 rounded-3xl h-40 w-40 bg-slate-900 -mt-16"
                             />
                         ) : (
                             <Skeleton circle={true} height={150} width={150} />
                         )}  
                     </div>
-                    <div className="basic-info mx-11">
+                    <div className="basic-info md:mx-11">
                         <h2 className="mb-1 font-bold text-2xl">
                             {headerData ? headerData.name : <Skeleton width={150} />}
                         </h2>
@@ -62,7 +62,7 @@ export default function Header() {
                         </ul>
                     </div>
                 </div>
-                <div className="right flex justify-end basic-1/2">
+                <div className="right flex justify-center md:justify-end basic-1/2 p-4">
                     <ul className="content text-white list-none mb-0">
                         <li className="mb-2">
                             <span className="block text-xs text-slate-500">EMAIL</span>

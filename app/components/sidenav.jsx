@@ -9,7 +9,7 @@ import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 
 const links = [
- { name: 'About', href: '/about', icon: LuUserCircle2 },
+ { name: 'About', href: '/', icon: LuUserCircle2 },
  { name: 'Resume', href: '/resume', icon: LuFileText },
  { name: 'Blog', href: '/blog', icon: LuBookOpen },
  { name: 'Portfolio', href: '/portfolio', icon: LuCodesandbox },
@@ -22,7 +22,7 @@ const MemoizedLink = React.memo(({ link, pathname }) => {
     return (
         <Link href={link.href} passHref>
             <div className={clsx(pathname === link.href ? styles.buttonActive : styles.button)}>
-                <LinkIcon className="size-11" />
+                <LinkIcon className="size-5 lg:size-11" />
                 <p>{link.name}</p>
             </div>
         </Link>
@@ -41,7 +41,7 @@ const Sidenavbar = () => {
     }, []);
 
     return (
-        <nav className="flex flex-col sticky top-5 rounded-3xl py-2.5 px-5 h-auto w-auto justify-between bg-[#23262b] text-white ">
+        <nav className="flex lg:flex-col sticky lg:top-5 rounded-3xl lg:py-2.5 lg:px-5 h-auto w-auto lg:justify-between bg-[#23262b] text-white ">
             {loading ? (
                 // Render skeleton placeholders while loading
                 Array.from({ length: links.length }).map((_, index) => (
