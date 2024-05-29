@@ -19,23 +19,23 @@ export default function Header() {
 
     return (
         <>
-            <header className=" md:flex md:justify-between rounded-3xl py-2 lg:py-8 lg:px-28 h-auto bg-[#23262b] mb-6 text-white">
-                <div className="left flex flex-col items-center md:items-start md:flex-row md:justify-start basic-1/2 relative md:pr-5 lg:border-r-2">
-                    <div className="header-photo md:mr-7 ">
+            <header className=" flex flex-col items-center md:flex-row md:items-start md:flex md:justify-between rounded-3xl py-8 px-4 xl:px-28 h-auto bg-[#23262b] md:mb-6 text-white">
+                <div className="md:flex justify-start relative md:pr-5 xl:border-r-2">
+                   
                         {headerData ? (
                             <Image
                                 src={headerData.imageUrl}
                                 width={150}
                                 height={150}
                                 alt="Hero Image"
-                                className="border-2 rounded-3xl h-40 w-40 bg-slate-900 -mt-16"
+                                className="border-2 rounded-3xl h-40 w-40 bg-slate-900 mx-auto -mt-12 md:-mt-16 "
                             />
                         ) : (
                             <Skeleton circle={true} height={150} width={150} />
                         )}  
-                    </div>
-                    <div className="basic-info md:mx-11">
-                        <h2 className="mb-1 font-bold text-2xl">
+                  
+                    <div className="sm:flex-col lg:mx-11 md:pl-8" >
+                        <h2 className="mb-1 font-bold text-2xl text-center md:text-left" >
                             {headerData ? headerData.name : <Skeleton width={150} />}
                         </h2>
                         <span className="pt-3 text-slate-500">
@@ -62,8 +62,8 @@ export default function Header() {
                         </ul>
                     </div>
                 </div>
-                <div className="right flex justify-center md:justify-end basic-1/2 p-4">
-                    <ul className="content text-white list-none mb-0">
+                <div className="right flex justify-center ">
+                    <ul className="content text-white list-none mb-0" >
                         <li className="mb-2">
                             <span className="block text-xs text-slate-500">EMAIL</span>
                             <a href={`mailto:${headerData ? headerData.email : '#'}`} className="text-lgs">
