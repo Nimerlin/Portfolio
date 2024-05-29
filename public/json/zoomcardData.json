@@ -1,0 +1,42 @@
+{
+    "certifications": [
+      {
+        "imageSrc": "/images/certifications/awsarchitectassociate.png",
+        "title": "Certified AWS Associate Solution Architech",
+        "description": "Certificate No: "
+      },
+      {
+        "imageSrc": "/images/certifications/azureadministrator.png",
+        "title": "Certified Azure Administrator 104",
+        "description": "Certificate No: AB3006-865CK8"
+      },
+      {
+        "imageSrc": "/images/certifications/azurefundamental.png",
+        "title": "Certified Azure Fundamental",
+        "description": "Certificate No: 99F34E-55C22X"
+      },
+      {
+        "imageSrc": "/images/certifications/cloudcomputing.jpg",
+        "title": "Advanced Cloud Computing & DevOps through IIT Roorkee",
+        "description": "Certificate No: EICT-IITR-IP-B3-060"
+      }
+    ],
+    "projects": [
+      {
+        "imageSrc": "/images/profile/devops-img.gif",
+        "title": "Project 1",
+        "description": "Description goes here..."
+      },
+      {
+        "imageSrc": "/images/profile/devops-img.gif",
+        "title": "Project 2",
+        "description": "Description goes here..."
+      },
+      {
+        "imageSrc": "/images/profile/devops-img.gif",
+        "title": "Project 3",
+        "description": "Description goes here..."
+      }
+    ]
+  }
+  

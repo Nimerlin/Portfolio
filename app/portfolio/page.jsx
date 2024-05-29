@@ -1,11 +1,18 @@
 'use client'
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaGripLines } from "react-icons/fa";
 import ZoomCard from '../components/zoomcard';
-import { useState } from 'react';
 
 const Portfolio = () => {
   const [activeTab, setActiveTab] = useState('all');
+  const [data, setData] = useState({ certifications: [], projects: [] });
+
+  useEffect(() => {
+    fetch('/json/zoomcardData.json')
+      .then(response => response.json())
+      .then(data => setData(data))
+      .catch(error => console.error('Error fetching data:', error));
+  }, []);
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
@@ -37,51 +44,24 @@ const Portfolio = () => {
         {/* Add more tabs as needed */}
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {(activeTab === 'all' || activeTab === 'certifications') && (
-          <>
-            <ZoomCard
-              imageSrc="/images/profile/devops-img.gif"
-              title="Certificate 1 "
-              description="Description goes here..."
-              type="certifications"
-            />
-            <ZoomCard
-              imageSrc="/images/profile/devops-img.gif"
-              title="Certificate 2 "
-              description="Description goes here..."
-              type="certifications"
-            />
-            <ZoomCard
-              imageSrc="/images/profile/devops-img.gif"
-              title="Certificate 3"
-              description="Description goes here..."
-              type="certifications"
-            />
-          </>
-        )}
-        {(activeTab === 'all' || activeTab === 'projects') && (
-          <>
-            <ZoomCard
-              imageSrc="/images/profile/devops-img.gif"
-              title="Project 1"
-              description="Description goes here..."
-              type="projects"
-
-            />
-            <ZoomCard
-              imageSrc="/images/profile/devops-img.gif"
-              title="Project 2"
-              description="Description goes here..."
-              type="projects"
-            />
-            <ZoomCard
-              imageSrc="/images/profile/devops-img.gif"
-              title="Project 3"
-              description="Description goes here..."
-              type="projects"
-            />
-          </>
-        )}
+        {(activeTab === 'all' || activeTab === 'certifications') && data.certifications.map((cert, index) => (
+          <ZoomCard
+            key={index}
+            imageSrc={cert.imageSrc}
+            title={cert.title}
+            description={cert.description}
+            type="certifications"
+          />
+        ))}
+        {(activeTab === 'all' || activeTab === 'projects') && data.projects.map((proj, index) => (
+          <ZoomCard
+            key={index}
+            imageSrc={proj.imageSrc}
+            title={proj.title}
+            description={proj.description}
+            type="projects"
+          />
+        ))}
         {/* Add more types of cards based on the tabs */}
       </div>
     </div>
