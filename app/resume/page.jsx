@@ -71,7 +71,7 @@ const About = () => {
                   <FaCircle className="absolute top-0 left-0 transform -translate-x-1/2 -translate-y-1/2 text-[#545972]" />
                   <h5>{ item.company } || {item.position}</h5>
                   <span>{item.dates}</span>
-                  <p>{item.description}</p>
+                  <p className="text-base mt-2.5 text-[#aeb0b8]">{item.description}</p>
                 </div>
               ))}
             </div>
