@@ -22,8 +22,8 @@ const MemoizedLink = React.memo(({ link, pathname }) => {
     return (
         <Link href={link.href} passHref>
             <div className={clsx(pathname === link.href ? styles.buttonActive : styles.button)}>
-                <LinkIcon className="size-5 lg:size-11" />
-                <p>{link.name}</p>
+            <LinkIcon className="size-8 md:size-11" />
+            <p className='hidden md:block'>{link.name}</p>
             </div>
         </Link>
     );
@@ -41,11 +41,11 @@ const Sidenavbar = () => {
     }, []);
 
     return (
-        <nav className="flex lg:flex-col sticky lg:top-5 rounded-3xl lg:py-2.5 lg:px-5 h-auto w-auto lg:justify-between bg-[#23262b] text-white ">
+        <nav className="flex flex-row lg:flex-col sticky top-5 rounded-3xl py-2 my-2.5 md:py-2.5 px-2 md:px-5 justify-between bg-[#23262b] text-white ">
             {loading ? (
                 // Render skeleton placeholders while loading
                 Array.from({ length: links.length }).map((_, index) => (
-                    <div key={index} className="flex items-center mb-2">
+                    <div key={index} className="items-center mb-2">
                         <Skeleton circle={true} height={24} width={24} className="mr-2" />
                         <Skeleton height={20} width={100} />
                     </div>
