@@ -120,7 +120,7 @@ const About = () => {
           </div>
         )}
       </div>
-
+      
       {skillsSection && (
         <div>
           <div className="flex items-center mt-4">
@@ -128,17 +128,17 @@ const About = () => {
           </div>
           <div className="card mt-4 border border-gray-300 rounded-lg p-4">
             <div className="flex flex-col">
-              {/* {skillsSection.items.map((skill, skillIndex) => (
-                <div key={skillIndex} className="flex items-center mb-2 relative">
-                  <span className="absolute left-0">{skill.name}</span>
-                  <div className="w-3/4 bg-gray-300 h-6 rounded-full relative">
+              {skillsSection.items.map((skill, skillIndex) => (
+                <div key={skillIndex} className="flex items-center mb-2 relative text-sm md:text-base">
+                  <span className="absolute left-0 ">{skill.name}</span>
+                  <div className="w-full bg-gray-300 h-6 rounded-full relative">
                     <div
                       className={`bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% h-full rounded-full`}
                       style={{ width: skill.percentage }}
                     >
                       <span className="absolute left-0 top-1/2 transform -translate-y-1/2 pl-2">{skill.name}</span>
                       <span
-                        className="absolute right-0 top-0 bottom-0 mt-auto mb-auto mr-2"
+                        className="absolute right-0 top-0 bottom-0 mr-2 hidden md:block"
                         style={{ right: `calc(${100 - parseFloat(skill.percentage)}% - 0.1rem)` }}
                       >
                         {skill.level}
@@ -146,42 +146,11 @@ const About = () => {
                     </div>
                   </div>
                 </div>
-              ))} */}
-              {skillsSection && (
-                <div>
-                  <div className="flex items-center mt-4">
-                    <span className="text-2xl font-bold">{skillsSection.title}</span>
-                  </div>
-                  <div className="card mt-4 border border-gray-300 rounded-lg p-4">
-                    <div className="flex flex-col">
-                      {skillsSection.items.map((skill, skillIndex) => (
-                        <div key={skillIndex} className="flex items-center mb-2 relative text-sm md:text-base">
-                          <span className="absolute left-0 ">{skill.name}</span>
-                          <div className="w-full bg-gray-300 h-6 rounded-full relative">
-                            <div
-                              className={`bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% h-full rounded-full`}
-                              style={{ width: skill.percentage }}
-                            >
-                              <span className="absolute left-0 top-1/2 transform -translate-y-1/2 pl-2">{skill.name}</span>
-                              <span
-                                className="absolute right-0 top-0 bottom-0 mr-2 hidden md:block"
-                                style={{ right: `calc(${100 - parseFloat(skill.percentage)}% - 0.1rem)` }}
-                              >
-                                {skill.level}
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              )}
+              ))}
             </div>
           </div>
         </div>
       )}
-
     </div>
   );
 };
