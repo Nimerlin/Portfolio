@@ -59,46 +59,55 @@
         "title": "Skills",
         "items": [
           {
-            "name": "AWS , Azure Cloud",
-            "level": "Intermediate",
-            "percentage": "70%"
-          },
-          {
-            "name": "Git & GitHub",
-            "level": "Intermediate",
-            "percentage": "66%"
-          },
-          {
-            "name": "Jenkins,Actions,ArgoCD AWS & Azure DevOps",
-            "level": "Advanced",
-            "percentage": "80%"
-          },
-          {
-            "name": "Docker, Kubernetes, EKS, ECS",
-            "level": "Intermediate",
-            "percentage": "60%"
-          },
-          {
-            "name": "Ansible",
-            "level": "Beginner",
-            "percentage": "40%"
-          },
-          {
-            "name": "Unix & Windows Server",
-            "level": "Intermediate",
-            "percentage": "70%"
-          },
-          {
-            "name": "Bash & Python Scripting",
-            "level": "Intermediate",
-            "percentage": "60%"
-          },
-          {
-            "name": "Terraform & CloudFormation",
-            "level": "Intermediate",
-            "percentage": "75%"
-          }
-
+            "title": "Skills",
+            "items": [
+             {
+              "name": "Ansible",
+              "level": "Beginner",
+              "percentage": "50%"
+             },
+             {
+              "name": "AWS, Azure Cloud",
+              "level": "Intermediate",
+              "percentage": "80%"
+             },
+             {
+              "name": "Git & GitHub",
+              "level": "Intermediate",
+              "percentage": "80%"
+             },
+             {
+              "name": "Jenkins,Actions,ArgoCD",
+              "level": "Advanced",
+              "percentage": "90%"
+             },
+             {
+              "name": "Docker, Kubernetes",
+              "level": "Intermediate",
+              "percentage": "80%"
+             },
+             {
+              "name": "EKS, ECS",
+              "level": "Intermediate",
+              "percentage": "80%"
+             },
+             {
+              "name": "Unix & Windows Server",
+              "level": "Intermediate",
+              "percentage": "80%"
+             },
+             {
+              "name": "Bash & Python Scripting",
+              "level": "Intermediate",
+              "percentage": "80%"
+             },
+             {
+              "name": "Terraform & CloudFormation",
+              "level": "Intermediate",
+              "percentage": "80%"
+             }
+            ]
+           }
         ]
       }
     ]

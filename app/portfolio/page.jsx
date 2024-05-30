@@ -43,7 +43,7 @@ const Portfolio = () => {
         </button>
         {/* Add more tabs as needed */}
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
         {(activeTab === 'all' || activeTab === 'certifications') && data.certifications.map((cert, index) => (
           <ZoomCard
             key={index}
