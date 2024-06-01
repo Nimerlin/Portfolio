@@ -1,106 +1,108 @@
 {
-    "title": "Resume",
-    "sections": [
-      {
-        "icon": "GiHandBag",
-        "title": "Experience",
-        "items": [
-          {
-            "position": "AWS DevOps Engineer",
-            "company": "Tech Mahindra",
-            "dates": "June 2022 - Present",
-            "description": "- Developed SOPs and architected AWS infrastructure and Data Flow Diagrams (DFDs).\n- Proficient in AWS services: EC2, IAM, VPC, S3, CloudFront, CloudWatch, CloudFormation, ALB, Lambda, RDS, EKS, ECR, SNS, Security Hub, WAF, CodePipeline, CodeDeploy, and AWS Backup.\n- Implemented CI/CD pipelines using GitHub Actions and Jenkins/CodePipeline.\n- Managed build and release pipelines for mobile apps in Flutter using GitHub Actions.\n- Oversaw dependencies for Apache, PHP, Laravel, Node.js, MySQL, and more.\n- Administered Ubuntu OS in a restricted TechM network environment.\n- Expertise in Docker containerization, image creation, and hosting.\n- Experienced with Amazon EKS for cluster management and app deployment.\n- Automated infrastructure provisioning with AWS CloudFormation and Terraform.\n- Ensured security with Tenable agents, vulnerability scans, and adherence to best practices.\n- Used tools like GitHub code scan, VAPT, and Security Hub for vulnerability assessments.\n- Maintained compliance and created deployment guides for multiple clients.\n- Collaborated with clients like RR, BCCI, IPL, and FanNxt, and partnered with AWS for TechM Sports Tech Project.\n - Demonstrated leadership, problem-solving, communication, and team collaboration skills."
-          },
-          {
-            "position": "DevOps Engineer",
-            "company": "Capgemini",
-            "dates": "April 2020 - July 2022",
-            "description": "- Deployment pipelines in Jenkins for continuous deployment across local staging, development, and testing environments.\n- Managed GIT version control, enabling code versioning, branching, merging, and reversion, facilitating build support and deployments.\n- Developed and executed CI/CD roadmaps within projects using Jenkins, configuring pipelines to streamline development processes.\n- Configured Jenkins for automated builds in testing environments and possessed proficiency in Ansible for configuration management.\n- Led change requests for production servers, monitored CPI/KPI metrics across environments, and conducted health checks to ensure operational efficiency.\n- Demonstrated effective communication and collaboration with stakeholders, showing a quick grasp of new technologies."
-          },
-          {
-            "position": "DBA & DevOps",
-            "company": "Capgemini",
-            "dates": "July 2019 - March 2020",
-            "description": "- Installation, configuration, maintenance, migration, and administration of SQL Server environments.\n- Strong troubleshooting skills for resolving database integrity issues, performance bottlenecks, blocking, deadlocking, and connectivity issues.\n- Proficient in backup strategies, restores, recovery models, and database maintenance tasks like shrink operations and DBCC commands.\n- Experience in implementing Disaster Recovery (DR) solutions and ensuring High Availability through techniques like Database Mirroring, Replication, and Log Shipping.\n- Enforcing SQL Server security measures, managing database authentication modes, user creation, permissions configuration, and role assignment.\n- Performance tuning and query optimization using tools like Performance Monitor, SQL Profiler, and other monitoring and troubleshooting utilities.\n- Creating and managing Jobs, Alerts, and SQL Mail Agent.\n- Handling Change Management requests on production servers, maintaining database integrity, and security through regular communication with cross-functional teams."
-          }
-        ]
-      },
-      {
-        "title": "Education",
-        "items": [
-          {
-            "institution": "IIT Roorkee",
-            "dates": "June 2013 - March 2016",
-            "description": "Advanced Cloud computing & DevOps || P.G DIPLOMA "
-          },
-          {
-            "institution": "Mumbai University",
-            "dates": "August 2016 - March 2019",
-            "description": "BSCIT || SIES College of Commerce & Economics"
-          },
-          {
-            "institution": "Mumbai Board",
-            "dates": "June 2013 - March 2016",
-            "description": "HSC, SSC || Shree Sanatan Dharam Vidyalaya "
-          }
-
-        ]
-      },
-      {
-        "title": "Personal Projects",
-        "items": [
-          {
-            "project": "Project Name",
-            "description": "Project details here"
-          }
-        ]
-      },
-      {
-        "title": "Skills",
-        "items": [
-          {
-            "name": "AWS , Azure Cloud",
-            "level": "Intermediate",
-            "percentage": "70%"
-          },
-          {
-            "name": "Git & GitHub",
-            "level": "Intermediate",
-            "percentage": "66%"
-          },
-          {
-            "name": "Jenkins,Actions,ArgoCD AWS & Azure DevOps",
-            "level": "Advanced",
-            "percentage": "80%"
-          },
-          {
-            "name": "Docker, Kubernetes, EKS, ECS",
-            "level": "Intermediate",
-            "percentage": "60%"
-          },
-          {
-            "name": "Ansible",
-            "level": "Beginner",
-            "percentage": "40%"
-          },
-          {
-            "name": "Unix & Windows Server",
-            "level": "Intermediate",
-            "percentage": "70%"
-          },
-          {
-            "name": "Bash & Python Scripting",
-            "level": "Intermediate",
-            "percentage": "60%"
-          },
-          {
-            "name": "Terraform & CloudFormation",
-            "level": "Intermediate",
-            "percentage": "75%"
-          }
-
-        ]
-      }
-    ]
-  }
-  
+  "title": "Resume",
+  "sections": [
+    {
+      "icon": "GiHandBag",
+      "title": "Experience",
+      "items": [
+        {
+          "position": "AWS DevOps Engineer",
+          "company": "Tech Mahindra",
+          "dates": "June 2022 - Present",
+          "description": "- Developed SOPs and architected AWS infrastructure and Data Flow Diagrams (DFDs).\n- Proficient in AWS services: EC2, IAM, VPC, S3, CloudFront, CloudWatch, CloudFormation, ALB, Lambda, RDS, EKS, ECR, SNS, Security Hub, WAF, CodePipeline, CodeDeploy, and AWS Backup.\n- Implemented CI/CD pipelines using GitHub Actions and Jenkins/CodePipeline.\n- Managed build and release pipelines for mobile apps in Flutter using GitHub Actions.\n- Oversaw dependencies for Apache, PHP, Laravel, Node.js, MySQL, and more.\n- Administered Ubuntu OS in a restricted TechM network environment.\n- Expertise in Docker containerization, image creation, and hosting.\n- Experienced with Amazon EKS for cluster management and app deployment.\n- Automated infrastructure provisioning with AWS CloudFormation and Terraform.\n- Ensured security with Tenable agents, vulnerability scans, and adherence to best practices.\n- Used tools like GitHub code scan, VAPT, and Security Hub for vulnerability assessments.\n- Maintained compliance and created deployment guides for multiple clients.\n- Collaborated with clients like RR, BCCI, IPL, and FanNxt, and partnered with AWS for TechM Sports Tech Project.\n - Demonstrated leadership, problem-solving, communication, and team collaboration skills."
+        },
+        {
+          "position": "DevOps Engineer",
+          "company": "Capgemini",
+          "dates": "April 2020 - July 2022",
+          "description": "- Deployment pipelines in Jenkins for continuous deployment across local staging, development, and testing environments.\n- Managed GIT version control, enabling code versioning, branching, merging, and reversion, facilitating build support and deployments.\n- Developed and executed CI/CD roadmaps within projects using Jenkins, configuring pipelines to streamline development processes.\n- Configured Jenkins for automated builds in testing environments and possessed proficiency in Ansible for configuration management.\n- Led change requests for production servers, monitored CPI/KPI metrics across environments, and conducted health checks to ensure operational efficiency.\n- Demonstrated effective communication and collaboration with stakeholders, showing a quick grasp of new technologies."
+        },
+        {
+          "position": "DBA & DevOps",
+          "company": "Capgemini",
+          "dates": "July 2019 - March 2020",
+          "description": "- Installation, configuration, maintenance, migration, and administration of SQL Server environments.\n- Strong troubleshooting skills for resolving database integrity issues, performance bottlenecks, blocking, deadlocking, and connectivity issues.\n- Proficient in backup strategies, restores, recovery models, and database maintenance tasks like shrink operations and DBCC commands.\n- Experience in implementing Disaster Recovery (DR) solutions and ensuring High Availability through techniques like Database Mirroring, Replication, and Log Shipping.\n- Enforcing SQL Server security measures, managing database authentication modes, user creation, permissions configuration, and role assignment.\n- Performance tuning and query optimization using tools like Performance Monitor, SQL Profiler, and other monitoring and troubleshooting utilities.\n- Creating and managing Jobs, Alerts, and SQL Mail Agent.\n- Handling Change Management requests on production servers, maintaining database integrity, and security through regular communication with cross-functional teams."
+        }
+      ]
+    },
+    {
+      "title": "Education",
+      "items": [
+        {
+          "institution": "IIT Roorkee",
+          "dates": "June 2013 - March 2016",
+          "description": "Advanced Cloud computing & DevOps || P.G DIPLOMA "
+        },
+        {
+          "institution": "Mumbai University",
+          "dates": "August 2016 - March 2019",
+          "description": "BSCIT || SIES College of Commerce & Economics"
+        },
+        {
+          "institution": "Mumbai Board",
+          "dates": "June 2013 - March 2016",
+          "description": "HSC, SSC || Shree Sanatan Dharam Vidyalaya "
+        }
+      ]
+    },
+    {
+      "title": "Personal Projects",
+      "items": [
+        {
+          "project": "Project Name",
+          "description": "Project details here"
+        }
+      ]
+    },
+    {
+      "title": "Skills",
+      "items": [
+        {
+          "name": "Ansible",
+          "level": "Beginner",
+          "percentage": "50%"
+        },
+        {
+          "name": "AWS, Azure Cloud",
+          "level": "Intermediate",
+          "percentage": "80%"
+        },
+        {
+          "name": "Git & GitHub",
+          "level": "Intermediate",
+          "percentage": "80%"
+        },
+        {
+          "name": "Jenkins,Actions,ArgoCD",
+          "level": "Advanced",
+          "percentage": "90%"
+        },
+        {
+          "name": "Docker, Kubernetes",
+          "level": "Intermediate",
+          "percentage": "80%"
+        },
+        {
+          "name": "EKS, ECS",
+          "level": "Intermediate",
+          "percentage": "80%"
+        },
+        {
+          "name": "Unix & Windows Server",
+          "level": "Intermediate",
+          "percentage": "80%"
+        },
+        {
+          "name": "Bash & Python Scripting",
+          "level": "Intermediate",
+          "percentage": "80%"
+        },
+        {
+          "name": "Terraform & CloudFormation",
+          "level": "Intermediate",
+          "percentage": "80%"
+        }
+      ]
+    }
+  ]
+}

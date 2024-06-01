@@ -19,7 +19,7 @@ export default function Header() {
 
     return (
         <>
-            <header className=" flex flex-col items-center md:flex-row md:items-start md:flex md:justify-between rounded-3xl py-8 px-4 xl:px-28 h-auto bg-[#23262b] md:mb-6 text-white">
+            <header className=" flex flex-col items-center md:flex-row md:items-start md:flex md:justify-between rounded-3xl py-8 px-4 lg:px-20 h-auto bg-[#23262b] md:mb-6 text-white">
                 <div className="md:flex justify-start relative md:pr-5 xl:border-r-2">
                    
                         {headerData ? (
