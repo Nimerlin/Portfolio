@@ -41,7 +41,7 @@ const Sidenavbar = () => {
     }, []);
 
     return (
-        <nav className="flex flex-row lg:flex-col sticky top-5 rounded-3xl py-2 my-2.5 md:py-2.5 px-2 md:px-5 justify-between bg-[#23262b] text-white ">
+        <nav className="flex flex-row lg:flex-col sticky top-2.5 rounded-3xl py-2 my-2.5 md:py-2.5 px-2 md:px-5 border-b-4 border-b-blue-500 lg:border-none justify-between bg-[#23262b] text-white ">
             {loading ? (
                 // Render skeleton placeholders while loading
                 Array.from({ length: links.length }).map((_, index) => (

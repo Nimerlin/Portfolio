@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
         <main className=' min-h-screen flex-col justify-between max-w-screen-xl mx-auto relative p-4 md:p-14 lg:p-24 '>
           <Header />
           <div className="lg:flex relative">
-            <div > <Sidenavbar /> </div>
+          <div className="sticky top-2.5 z-10" > <Sidenavbar /> </div>
             <div className="bg-[#23262b] lg:ml-4 py-9 rounded-3xl w-full">{children}</div>
           </div>
         </main>
