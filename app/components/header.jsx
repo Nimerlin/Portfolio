@@ -28,7 +28,8 @@ export default function Header() {
                                 width={150}
                                 height={150}
                                 alt="Hero Image"
-                                className="border-2 rounded-3xl h-40 w-40 bg-slate-900 mx-auto -mt-12 md:-mt-16 "
+                                className="rounded-3xl h-40 w-40  mx-auto -mt-12 md:-mt-16 "
+                                objectFit="cover"
                             />
                         ) : (
                             <Skeleton circle={true} height={150} width={150} />
