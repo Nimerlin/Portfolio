@@ -5,5 +5,10 @@
     "email": "nitinsharma7738@gmail.com",
     "location": "Mumbai, India",
     "resumeUrl": "/resume.pdf",
-    "status": "Working"
+    "status": "Working",
+    "facebookUrl":"",
+    "twitterUrl": "",
+    "instagramUrl": "",
+    "linkedinUrl": "https://www.linkedin.com/in/nitin-sharma-102540209/",
+    "githubUrl": "https://github.com/Nimerlin"
   }

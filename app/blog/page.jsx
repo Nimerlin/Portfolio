@@ -24,6 +24,7 @@ const Blog = () => {
               imageSrc={blog.imageSrc}
               title={blog.title}
               desc={blog.desc}
+              url={blog.url} // Pass the URL from JSON data
             />
           </div>
         ))}

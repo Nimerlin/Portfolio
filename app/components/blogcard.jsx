@@ -1,11 +1,10 @@
 import styles from './styles.module.css';
 import Image from 'next/image';
 
-export default function Blogcard({ imageSrc, title, desc }) {
+export default function Blogcard({ imageSrc, title, desc, url }) {
 
     return (
-
-        <>
+        <a href={url} target="_blank" rel="noopener noreferrer" className="block transform transition-transform hover:scale-105">
             <div className="relative flex my-4 flex-col border-[#2e2f36] border-4 rounded-3xl shadow-md">
                 <div className="relative -mt-6 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
                     <Image
@@ -23,14 +22,11 @@ export default function Blogcard({ imageSrc, title, desc }) {
                     <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
                         {desc}
                     </p>
-                    <button data-ripple-light="true" type="button" className="rounded-lg bg-blue-500 py-3 px-6  mt-3 text-center align-middle font-sans text-xs font-bold  text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+                    {/* <button data-ripple-light="true" type="button" className="rounded-lg bg-blue-500 py-3 px-6  mt-3 text-center align-middle font-sans text-xs font-bold  text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
                         Read More
-                    </button>
+                    </button> */}
                 </div>
             </div>
-        </>
-
-
-    )
-
+        </a>
+    );
 }

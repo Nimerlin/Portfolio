@@ -1,6 +1,5 @@
 'use client'
 import React, { useEffect, useState } from 'react';
-import { FaGripLines } from "react-icons/fa";
 import ZoomCard from '../components/zoomcard';
 
 const Portfolio = () => {
@@ -50,6 +49,7 @@ const Portfolio = () => {
             imageSrc={cert.imageSrc}
             title={cert.title}
             description={cert.description}
+            url={cert.url} // Pass the URL here
             type="certifications"
           />
         ))}
@@ -59,6 +59,7 @@ const Portfolio = () => {
             imageSrc={proj.imageSrc}
             title={proj.title}
             description={proj.description}
+            url={proj.url} // Pass the URL here
             type="projects"
           />
         ))}
@@ -69,3 +70,4 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+

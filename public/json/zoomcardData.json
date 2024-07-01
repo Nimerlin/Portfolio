@@ -23,14 +23,16 @@
     ],
     "projects": [
       {
-        "imageSrc": "/images/profile/devops-img.gif",
-        "title": "Project 1",
-        "description": "Description goes here..."
+        "imageSrc": "/images/projects/trading.webp",
+        "title": "WordPress Project",
+        "description": "Trading company located in Bahrain",
+        "url":"https://naysatrading.com/"
       },
       {
-        "imageSrc": "/images/profile/devops-img.gif",
-        "title": "Project 2",
-        "description": "Description goes here..."
+        "imageSrc": "/images/projects/logistics.jpeg",
+        "title": "Project using Html, CSS, JS ",
+        "description": "Logistic company loacted in Mumbai",
+        "url":"https://www.iconicfreightlogistics.com/"
       },
       {
         "imageSrc": "/images/profile/devops-img.gif",

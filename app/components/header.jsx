@@ -1,4 +1,4 @@
-"use client"; // Mark this component as a client component
+'use client';
 
 import { useState, useEffect } from 'react';
 import Image from "next/image";
@@ -45,11 +45,11 @@ export default function Header() {
                         <ul className="flex text-slate-500">
                             {headerData ? (
                                 <>
-                                    <li className="py-2"><LuFacebook /></li>
-                                    <li className="p-2"><FaTwitter /></li>
-                                    <li className="p-2"><LuInstagram /></li>
-                                    <li className="p-2"><FaLinkedin /></li>
-                                    <li className="p-2"><FaGithub /></li>
+                                    <li className="py-2"><a href={headerData.facebookUrl} target="_blank" rel="noopener noreferrer"><LuFacebook /></a></li>
+                                    <li className="p-2"><a href={headerData.twitterUrl} target="_blank" rel="noopener noreferrer"><FaTwitter /></a></li>
+                                    <li className="p-2"><a href={headerData.instagramUrl} target="_blank" rel="noopener noreferrer"><LuInstagram /></a></li>
+                                    <li className="p-2"><a href={headerData.linkedinUrl} target="_blank" rel="noopener noreferrer"><FaLinkedin /></a></li>
+                                    <li className="p-2"><a href={headerData.githubUrl} target="_blank" rel="noopener noreferrer"><FaGithub /></a></li>
                                 </>
                             ) : (
                                 <>
