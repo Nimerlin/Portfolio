@@ -8,7 +8,7 @@ import styles from './styles.module.css'
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Nitin Sharma",
+  title: "Nitin Sharma - DevOps Engineer",
   description: "Devops Engineer",
 };
 
