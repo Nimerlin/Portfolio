@@ -10,6 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Nitin Sharma - DevOps Engineer",
   description: "Devops Engineer",
+  
 };
 
 export default function RootLayout({ children }) {
